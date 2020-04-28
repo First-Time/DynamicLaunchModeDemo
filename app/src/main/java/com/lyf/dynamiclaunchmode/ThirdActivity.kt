@@ -2,16 +2,15 @@ package com.lyf.dynamiclaunchmode
 
 import android.content.Intent
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_third.*
 
-class MainActivity : BaseActivity() {
+class ThirdActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        actionBar?.setDisplayHomeAsUpEnabled(false)
+        setContentView(R.layout.activity_third)
 
-        btn_second.setOnClickListener {
+        btn_main.setOnClickListener {
 //            toActivity<SecondActivity>()
 
             val intent = Intent()
